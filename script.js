@@ -1,0 +1,134 @@
+/* Reset dasar */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Background galaksi */
+body {
+  background: url("img/Galaksidarkmatter.jpg") no-repeat center center/cover;
+}
+
+/* Canvas bintang */
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* paling bawah */
+}
+
+/* Overlay agar teks terlihat jelas */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Header Navigasi */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+header h1 {
+  margin: 0;
+  color: #fcfcfcff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fcfcff;
+}
+
+/* Hero Section */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 35%;
+  transform: translateY(-35%);
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.2em;
+  color: #fcfcfcff;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #6200ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3700b3;
+}
+
+/* Konten Utama */
+main {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 100vh;
+  border-radius: 10px;
+}
+
+main h3 {
+  color: #ffcc00;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  margin-top: 50px;
+}
